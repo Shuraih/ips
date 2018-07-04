@@ -13,3 +13,10 @@ use Illuminate\Http\Request;
 |
 */
 
+/**
+ * Route: module_reminder_assigner
+ * Description: Assign module reminders for the given contact
+ *
+ * Params: contact_email
+ */
+Route::post('module_reminder_assigner', 'ApiController@assignReminder')->name('api.module_reminder_assigner');
